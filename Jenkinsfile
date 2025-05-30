@@ -6,7 +6,7 @@ pipeline {
                 sh 'npm install' 
             }
         }
-            stages {
+    stages {
         stage('Build') { 
             steps {
                 sh './jenkins/scripts/test.sh'
